@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIS_Shell", "MIS_Shell\MIS_Shell.csproj", "{55D357FE-2316-47D3-8CFC-998593F4A2F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBHelper", "DBHelper\DBHelper.csproj", "{4F86696C-DB6D-4F19-B10E-C579F64303DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F7823F7C-7984-4603-B8BC-7BC5D857FA36}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.0.235:8080/tfs/shell
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DAL\\DAL.csproj
+		SccProjectName1 = DAL
+		SccLocalPath1 = DAL
+		SccProjectUniqueName2 = DBHelper\\DBHelper.csproj
+		SccProjectName2 = DBHelper
+		SccLocalPath2 = DBHelper
+		SccProjectUniqueName3 = MIS_Shell\\MIS_Shell.csproj
+		SccProjectName3 = MIS_Shell
+		SccLocalPath3 = MIS_Shell
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Debug|x86.ActiveCfg = Debug|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Debug|x86.Build.0 = Debug|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Release|Any CPU.ActiveCfg = Release|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Release|Mixed Platforms.Build.0 = Release|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Release|x86.ActiveCfg = Release|x86
+		{55D357FE-2316-47D3-8CFC-998593F4A2F5}.Release|x86.Build.0 = Release|x86
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4F86696C-DB6D-4F19-B10E-C579F64303DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F7823F7C-7984-4603-B8BC-7BC5D857FA36}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

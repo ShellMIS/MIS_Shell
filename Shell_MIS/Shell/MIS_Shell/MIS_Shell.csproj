@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55D357FE-2316-47D3-8CFC-998593F4A2F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MIS_Shell</RootNamespace>
+    <AssemblyName>MIS_Shell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin4, Version=2006.3.22.45, Culture=neutral, PublicKeyToken=127be25a6db25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization, Version=1.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=2.0.0.0" />
+    <Reference Include="NPOI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreaSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaSetting.Designer.cs">
+      <DependentUpon>AreaSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BS.designer.cs">
+      <DependentUpon>BS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BSSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BSSetting.Designer.cs">
+      <DependentUpon>BSSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COASetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COASetting.Designer.cs">
+      <DependentUpon>COASetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommExcel\CommBS.cs" />
+    <Compile Include="CommExcel\CommKPI.cs" />
+    <Compile Include="CommExcel\CommPL.cs" />
+    <Compile Include="CommExcel\ImportToExcel.cs" />
+    <Compile Include="DataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImport.Designer.cs">
+      <DependentUpon>DataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataListDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataListDB.Designer.cs">
+      <DependentUpon>DataListDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentAlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentAlter.Designer.cs">
+      <DependentUpon>DepartmentAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentManager.Designer.cs">
+      <DependentUpon>DepartmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Group2Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group2Setting.designer.cs">
+      <DependentUpon>Group2Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupSetting.Designer.cs">
+      <DependentUpon>GroupSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JVDSMDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JVDSMDC.Designer.cs">
+      <DependentUpon>JVDSMDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JVSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JVSetting.Designer.cs">
+      <DependentUpon>JVSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JV_COASetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JV_COASetting.Designer.cs">
+      <DependentUpon>JV_COASetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JV_T5Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JV_T5Setting.Designer.cs">
+      <DependentUpon>JV_T5Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPIReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPIReport.Designer.cs">
+      <DependentUpon>KPIReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KPISetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KPISetting.Designer.cs">
+      <DependentUpon>KPISetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_AllocationRights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_AllocationRights.Designer.cs">
+      <DependentUpon>MIS_AllocationRights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_BackDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_BackDatabase.Designer.cs">
+      <DependentUpon>MIS_BackDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_Import.Designer.cs">
+      <DependentUpon>MIS_Import.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_KPI_T5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_KPI_T5.Designer.cs">
+      <DependentUpon>MIS_KPI_T5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_Login.Designer.cs">
+      <DependentUpon>MIS_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_MDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_MDIParent.Designer.cs">
+      <DependentUpon>MIS_MDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_OpertionLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_OpertionLog.Designer.cs">
+      <DependentUpon>MIS_OpertionLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_Registration.designer.cs">
+      <DependentUpon>MIS_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_Report.Designer.cs">
+      <DependentUpon>MIS_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_RoleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_RoleManager.Designer.cs">
+      <DependentUpon>MIS_RoleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_SiteCategotySetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_SiteCategotySetting.Designer.cs">
+      <DependentUpon>MIS_SiteCategotySetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_T5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_T5.Designer.cs">
+      <DependentUpon>MIS_T5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_User_Competence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_User_Competence.designer.cs">
+      <DependentUpon>MIS_User_Competence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_User_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_User_Data.designer.cs">
+      <DependentUpon>MIS_User_Data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_User_Insert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_User_Insert.designer.cs">
+      <DependentUpon>MIS_User_Insert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_User_UPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_User_UPwd.designer.cs">
+      <DependentUpon>MIS_User_UPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpexReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpexReport.Designer.cs">
+      <DependentUpon>OpexReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OPEX_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPEX_Setting.Designer.cs">
+      <DependentUpon>OPEX_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLDBSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLDBSetting.Designer.cs">
+      <DependentUpon>PLDBSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLSetting.Designer.cs">
+      <DependentUpon>PLSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="T5 Settingcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T5 Settingcs.Designer.cs">
+      <DependentUpon>T5 Settingcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TB.Designer.cs">
+      <DependentUpon>TB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCodeSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCodeSetting.Designer.cs">
+      <DependentUpon>TCodeSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalSiteSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalSiteSetting.Designer.cs">
+      <DependentUpon>TotalSiteSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateArea.Designer.cs">
+      <DependentUpon>UpdateArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBS.Designer.cs">
+      <DependentUpon>UpdateBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCOA.Designer.cs">
+      <DependentUpon>UpdateCOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateGroup.Designer.cs">
+      <DependentUpon>UpdateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateGroup2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateGroup2.designer.cs">
+      <DependentUpon>UpdateGroup2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJV.Designer.cs">
+      <DependentUpon>UpdateJV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJVDSMDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJVDSMDC.Designer.cs">
+      <DependentUpon>UpdateJVDSMDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJVT5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJVT5.Designer.cs">
+      <DependentUpon>UpdateJVT5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJV_COA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJV_COA.Designer.cs">
+      <DependentUpon>UpdateJV_COA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateKPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateKPI.Designer.cs">
+      <DependentUpon>UpdateKPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOPEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOPEX.Designer.cs">
+      <DependentUpon>UpdateOPEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePassWord.Designer.cs">
+      <DependentUpon>UpdatePassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePL.Designer.cs">
+      <DependentUpon>UpdatePL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePLDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePLDB.Designer.cs">
+      <DependentUpon>UpdatePLDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSiteCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSiteCategory.Designer.cs">
+      <DependentUpon>UpdateSiteCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateT5Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateT5Setting.Designer.cs">
+      <DependentUpon>UpdateT5Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTCode.Designer.cs">
+      <DependentUpon>UpdateTCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIS_UsersManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIS_UsersManager.Designer.cs">
+      <DependentUpon>MIS_UsersManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTotalSiteNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTotalSiteNumber.Designer.cs">
+      <DependentUpon>UpdateTotalSiteNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUser.Designer.cs">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限用户组管理页面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限用户组管理页面.designer.cs">
+      <DependentUpon>权限用户组管理页面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户详情.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户详情.designer.cs">
+      <DependentUpon>用户详情.cs</DependentUpon>
+    </Compile>
+    <Compile Include="系统背景.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="系统背景.Designer.cs">
+      <DependentUpon>系统背景.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AreaSetting.resx">
+      <DependentUpon>AreaSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BS.resx">
+      <DependentUpon>BS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BSSetting.resx">
+      <DependentUpon>BSSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COASetting.resx">
+      <DependentUpon>COASetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImport.resx">
+      <DependentUpon>DataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataListDB.resx">
+      <DependentUpon>DataListDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentAlter.resx">
+      <DependentUpon>DepartmentAlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentManager.resx">
+      <DependentUpon>DepartmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group2Setting.resx">
+      <DependentUpon>Group2Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupSetting.resx">
+      <DependentUpon>GroupSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JVDSMDC.resx">
+      <DependentUpon>JVDSMDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JVSetting.resx">
+      <DependentUpon>JVSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JV_COASetting.resx">
+      <DependentUpon>JV_COASetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JV_T5Setting.resx">
+      <DependentUpon>JV_T5Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPIReport.resx">
+      <DependentUpon>KPIReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KPISetting.resx">
+      <DependentUpon>KPISetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_AllocationRights.resx">
+      <DependentUpon>MIS_AllocationRights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_BackDatabase.resx">
+      <DependentUpon>MIS_BackDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_Import.resx">
+      <DependentUpon>MIS_Import.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_KPI_T5.resx">
+      <DependentUpon>MIS_KPI_T5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_Login.resx">
+      <DependentUpon>MIS_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_MDIParent.resx">
+      <DependentUpon>MIS_MDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_OpertionLog.resx">
+      <DependentUpon>MIS_OpertionLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_Registration.resx">
+      <DependentUpon>MIS_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_Report.resx">
+      <DependentUpon>MIS_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_RoleManager.resx">
+      <DependentUpon>MIS_RoleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_SiteCategotySetting.resx">
+      <DependentUpon>MIS_SiteCategotySetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_T5.resx">
+      <DependentUpon>MIS_T5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_UsersManager.resx">
+      <DependentUpon>MIS_UsersManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_User_Competence.resx">
+      <DependentUpon>MIS_User_Competence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_User_Data.resx">
+      <DependentUpon>MIS_User_Data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_User_Insert.resx">
+      <DependentUpon>MIS_User_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIS_User_UPwd.resx">
+      <DependentUpon>MIS_User_UPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpexReport.resx">
+      <DependentUpon>OpexReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPEX_Setting.resx">
+      <DependentUpon>OPEX_Setting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLDBSetting.resx">
+      <DependentUpon>PLDBSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLSetting.resx">
+      <DependentUpon>PLSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T5 Settingcs.resx">
+      <DependentUpon>T5 Settingcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TB.resx">
+      <DependentUpon>TB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCodeSetting.resx">
+      <DependentUpon>TCodeSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalSiteSetting.resx">
+      <DependentUpon>TotalSiteSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateArea.resx">
+      <DependentUpon>UpdateArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateBS.resx">
+      <DependentUpon>UpdateBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCOA.resx">
+      <DependentUpon>UpdateCOA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGroup.resx">
+      <DependentUpon>UpdateGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateGroup2.resx">
+      <DependentUpon>UpdateGroup2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJV.resx">
+      <DependentUpon>UpdateJV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJVDSMDC.resx">
+      <DependentUpon>UpdateJVDSMDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJVT5.resx">
+      <DependentUpon>UpdateJVT5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJV_COA.resx">
+      <DependentUpon>UpdateJV_COA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateKPI.resx">
+      <DependentUpon>UpdateKPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOPEX.resx">
+      <DependentUpon>UpdateOPEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePassWord.resx">
+      <DependentUpon>UpdatePassWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePL.resx">
+      <DependentUpon>UpdatePL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePLDB.resx">
+      <DependentUpon>UpdatePLDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSiteCategory.resx">
+      <DependentUpon>UpdateSiteCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateT5Setting.resx">
+      <DependentUpon>UpdateT5Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTCode.resx">
+      <DependentUpon>UpdateTCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTotalSiteNumber.resx">
+      <DependentUpon>UpdateTotalSiteNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUser.resx">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限用户组管理页面.resx">
+      <DependentUpon>权限用户组管理页面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户详情.resx">
+      <DependentUpon>用户详情.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="系统背景.resx">
+      <DependentUpon>系统背景.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{F7823F7C-7984-4603-B8BC-7BC5D857FA36}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBHelper\DBHelper.csproj">
+      <Project>{4F86696C-DB6D-4F19-B10E-C579F64303DA}</Project>
+      <Name>DBHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\qiaopai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

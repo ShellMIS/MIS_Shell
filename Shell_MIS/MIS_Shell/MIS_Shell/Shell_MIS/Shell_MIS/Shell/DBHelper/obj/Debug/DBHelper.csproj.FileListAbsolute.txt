@@ -1,0 +1,5 @@
+D:\壳牌项目\Shell_MIS\MIS_Shell\MIS_Shell\Shell_MIS\Shell_MIS\Shell\DBHelper\bin\Debug\DBHelper.dll
+D:\壳牌项目\Shell_MIS\MIS_Shell\MIS_Shell\Shell_MIS\Shell_MIS\Shell\DBHelper\bin\Debug\DBHelper.pdb
+D:\壳牌项目\Shell_MIS\MIS_Shell\MIS_Shell\Shell_MIS\Shell_MIS\Shell\DBHelper\obj\Debug\DBHelper.dll
+D:\壳牌项目\Shell_MIS\MIS_Shell\MIS_Shell\Shell_MIS\Shell_MIS\Shell\DBHelper\obj\Debug\DBHelper.pdb
+D:\壳牌项目\Shell_MIS\MIS_Shell\MIS_Shell\Shell_MIS\Shell_MIS\Shell\DBHelper\obj\Debug\DBHelper.csprojResolveAssemblyReference.cache
